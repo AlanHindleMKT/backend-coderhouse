@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Incrustamos de esta manera-->
+    <%- include('../partials/head') %>
+</head>
+<body>
+        <%- include('../partials/header') %>
+        <h3>Ingrese datos</h3>
+        <%- include('../partials/formulario') %>
+
+        <h2>Historial</h2>
+        
+        <% if(personas.length!==0) { %>
+            <%- include('../partials/tabla') %>    
+        <% } else { %>
+            <h2>No se encontraron datos</h2>
+        <% } %>
+
+        <%- include('../partials/footer') %>    
+</body>
+</html>

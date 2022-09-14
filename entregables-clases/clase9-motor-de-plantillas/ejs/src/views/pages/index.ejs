@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Incrustamos de esta manera-->
+    <%- include('../partials/head') %>
+</head>
+<body>
+        <%- include('../partials/header') %>
+
+
+        <h3>estoy en la mitad</h3>
+        <% if(render) { %>
+            <ul>
+                <% usuarios.forEach(usuario => { %>
+                    <li><%=usuario.nombre %> <%=usuario.apellido %></li>
+                <% }) %>
+            </ul>               
+        <% } %>
+
+
+        <%- include('../partials/footer') %>    
+</body>
+</html>
