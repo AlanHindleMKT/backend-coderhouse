@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Guardar producto:</h1>
+    <form action="/create" method="post">
+        <div>nombre: <input type="text" name="nombre" id="nombre"></div>
+        <div>precio: <input type="text" name="precio" id="precio"></div>
+        <div>url: <input type="text" name="url" id="url"></div>
+        <input type="submit" value="AGREGAR">
+    </form>
+    <form action="/search" method="get">
+        <div>buscar por id: <input type="text" name="id" id="id"></div>
+        <input type="submit" value="AGREGAR">
+    </form>
+</body>
+</html>
